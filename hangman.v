@@ -10,11 +10,7 @@ module hangman(clk, rst, letter, WrongGuesses, GameStatus);
     // assert to start new game
     input rst;
 
-    // letter is a 7-bit ASCII character
-    // See for example:
-    //   http://www.asciitable.com/
-    // That is, the lowercase letter "s" has numeric value
-    // 73 (decimal). In Verilog you can also use quoted
+    // In Verilog you can also use quoted
     // characters to represent ASCII values, e.g.
     //    (letter == "s") ? something : something_else
     // is identical to
